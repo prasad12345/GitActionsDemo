@@ -13,7 +13,11 @@ on:
     branches: [ "Master" ]
   pull_request:
     branches: [ "Master" ]
-
+permissions:
+  contents: read        # Default permission for reading repository contents
+  issues: write         # Additional permission for writing issues
+  pull-requests: write  # Additional permission for pull requests
+  
 jobs:
   build:
 
